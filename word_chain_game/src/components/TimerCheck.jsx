@@ -25,7 +25,7 @@ const TimerCheck = ({ score, setScore, count, setCount, rankings, setRankings })
 
       // 여기서 게임을 재시작하게 만들기
       setScore(0);  
-      setCount(10);  
+      setCount(200);  
       setGameOver(false);  
     }
 

@@ -2,13 +2,7 @@ import React, { useState } from "react";
 import TextBox from "./TextBox";
 import TimerCheck from "./TimerCheck";
 import Leaderboard from "./Leaderboard";
-import styled from "styled-components";
 
-const LeaderBoardStyle = styled.div`
-  border: 1px solid black;
-  margin-top: 15px;
-  text-align: center;
-`;
 
 const Game = () => {
   const [score, setScore] = useState(0);
@@ -48,9 +42,9 @@ const Game = () => {
           setRankings={setRankings}
         />
       </div>
-      <LeaderBoardStyle>
+      <div>
         <Leaderboard rankings={rankings} />
-      </LeaderBoardStyle>
+      </div>
     </>
   );
 };

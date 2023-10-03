@@ -3,18 +3,20 @@ import styled from "styled-components";
 
 const HeaderStyled = styled.div`
     width: 680px;
-    min-height: 40px;
+    min-height: 50px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
     border: 1px solid black;
+    border-radius: 10px 10px 0 0 ;
+    background-color: #f9f9f5;
 `
 
 const Title = styled.div`
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
 `
 
 const Header = () => {

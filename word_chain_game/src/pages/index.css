@@ -1,15 +1,35 @@
 .mainBox{
     width: 680px;
-    height: 70vh;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+
 }
 
+
+.mainBox::before {
+    content: "";  /* 가상 요소에 내용을 추가하려면 content 속성이 필요합니다. */
+    position: absolute;  /* 절대 위치 지정 */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  /* 가상 요소를 부모 요소에 꽉 차게 만듭니다. */
+    background-image: url('../../public/간결한 한글날 인스타그램 게시물.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;  /* 여기에서 원하는 투명도 값을 설정하세요 */
+    z-index: -1;  /* 내용이 가상 요소의 위에 올라오게 하기 위해 z-index 값을 설정합니다. */
+}
+
+
 .mainBox__detail{
-    height: 500px;
+    height: 570px;
+    text-align: center;
 }
 
 .keyWord{
@@ -21,15 +41,17 @@
 }
 
 input{
-    width: 200px;
+    width: 220px;
     height: 25px;
+    margin: 0 auto;
 }
 
 .timeZone{
     text-align: center;
     margin-top: 10px;
     color: red;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .point{
@@ -40,9 +62,35 @@ input{
 .point > span{
     color: green;
     font-size: 25px;
+    font-weight: 900;
 }
 
 
 .point__num{
     font-weight: bold;
+}
+
+
+.leaderboard {
+    margin-top: 15px;
+    text-align: center;
+}
+.leader__title{
+    font-size: 40px;
+}
+
+.leader__ul{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+
+.leader__ul >li{
+    margin-bottom: 7px;
 }
